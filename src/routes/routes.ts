@@ -1,19 +1,20 @@
 import { Router } from "express";
+import UserController from "../controllers/UserController";
 
 const router = Router();
 
 // CRATE
-router.post("/users");
+router.post("/users", UserController.create);
 
 // READ
-router.get("/users");
+router.get("/users", UserController.findAll);
 
-router.get("/users/:userCPF");
+router.get("/users/:userCPF", UserController.findOne);
 
 // UPDATE
-router.put("/users/:userCPF");
+router.put("/users/:userCPF", UserController.update);
 
 // DELETE
-router.delete("/users/:userCPF");
+router.delete("/users/:userCPF", UserController.destroy);
 
 export { router };
