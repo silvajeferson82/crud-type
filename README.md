@@ -13,3 +13,12 @@
 - Prettier
 - dotenv
 - scripts para dev, build e start em prod
+
+## PARTE 2
+
+### Estrutura:
+
+- config(Conexão com banco de dados)
+- models(Modelagem da tabela users)
+- controllers(Regra de negocio e validação - CRUD)
+- routes(Rotas de acesso de cada requisição CRUD)
