@@ -9,12 +9,12 @@ router.post("/users", UserController.create);
 // READ
 router.get("/users", UserController.findAll);
 
-router.get("/users/:userCPF", UserController.findOne);
+router.get("/users/:userCpf", UserController.findOne);
 
 // UPDATE
-router.put("/users/:userCPF", UserController.update);
+router.put("/users/:userCpf", UserController.update);
 
 // DELETE
-router.delete("/users/:userCPF", UserController.destroy);
+router.delete("/users/:userCpf", UserController.destroy);
 
 export { router };
